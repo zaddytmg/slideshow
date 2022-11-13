@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>SLIDESHOW</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/28530.jpg" alt="" /></div>
+          <div class="swiper-slide">
+            <img src="images/back-view-blue-sedan-road.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/red-black-sport-cars-racing-highway.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/white-coupe-sport-car-standing-road-front-view.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/white-modern-sport-car-parking-road.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/yellow-sport-car-with-black-autotuning-road.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
